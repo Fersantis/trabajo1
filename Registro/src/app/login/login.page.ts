@@ -23,4 +23,9 @@ export class LoginPage {
     this.navCtrl.navigateForward('/home', { state: { usuario: this.inputValue } }); // '/home' es la ruta definida para la página de inicio en tu enrutador
   }
 
+  Recuperarcontrasena() {
+    console.log('llegue');
+    this.navCtrl.navigateForward(['/recuperar']);
+  }
+
 }
