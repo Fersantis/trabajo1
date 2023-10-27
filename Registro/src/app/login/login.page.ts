@@ -8,6 +8,8 @@ import { NavController } from '@ionic/angular';
 })
 export class LoginPage {
 
+  inputValue: string ='';
+
   constructor(private navCtrl: NavController) {}
 
   Ingresar() {

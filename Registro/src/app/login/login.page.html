@@ -9,7 +9,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input label="Alumno"  labelPlacement="stacked" placeholder="Ingrese usuario" ></ion-input>
+      <ion-input label="Alumno" [(ngModel)]="inputValue"  labelPlacement="stacked" placeholder="Ingrese usuario" ></ion-input>
         <ion-input label="Password"  labelPlacement="stacked" placeholder="Ingrese contraseña" type="Password"  ></ion-input>
         <ion-button color="secondary"  size="default" (click)="Ingresar()">Ingresar</ion-button> 
     </ion-card-content>
