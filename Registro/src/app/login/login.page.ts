@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage-angular';
+
+
 
 @Component({
   selector: 'app-login',
@@ -14,7 +17,13 @@ export class LoginPage {
 
   user: any;
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController, private storage: Storage) {
+    this.initLocalStorage();
+  }
+
+  async initLocalStorage() {
+    await this.storage.create();
+  }
 
   Ingresar() {
     // Aquí puedes realizar la lógica de autenticación si es necesario

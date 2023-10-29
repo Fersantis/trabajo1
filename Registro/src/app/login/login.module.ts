@@ -9,6 +9,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+import { Storage } from '@ionic/storage-angular';
+
 
 @NgModule({
   imports: [
@@ -16,8 +20,10 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    MatButtonModule, MatDividerModule, MatIconModule
+    MatButtonModule, MatDividerModule, MatIconModule,
+    MatCheckboxModule
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage],
+  providers: [Storage]
 })
 export class LoginPageModule {}
