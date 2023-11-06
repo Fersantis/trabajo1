@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
   },
   {
+    path: 'profesor',
+    loadChildren: () => import('./profesor/profesor.module').then((m) => m.ProfesorPageModule)
+  },
+  {
     path: 'e404', // Agrega la ruta para la página de error 404 si no la has definido
   
     loadChildren: () => import('./e404/e404.module').then((m) => m.E404PageModule)
@@ -28,7 +32,8 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./e404/e404.module').then((m) => m.E404PageModule)
-  }
+  },
+
 ];
 
 @NgModule({

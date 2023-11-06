@@ -43,4 +43,8 @@ export class LoginPage {
     this.navCtrl.navigateForward(['/recuperar']);
   }
 
+  Ingprofe(){
+    this.navCtrl.navigateForward(['/profesor']);
+  }
+
 }
