@@ -6,6 +6,10 @@ import { ProfesorPage } from './profesor.page';
 
 import { ProfesorPageRoutingModule } from './profesor-routing.module';
 
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   imports: [

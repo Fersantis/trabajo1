@@ -9,10 +9,16 @@ import { NavController } from '@ionic/angular';
 })
 export class ProfesorPage {
 
-  usuario: string = '';
+  inputValue2: string ='';
+  datos: any[] | undefined;
+  state: any;
+
+  user: any;
 
   constructor(private navCtrl: NavController) {}
 
-  
+  Generarcodigo(){
+    this.navCtrl.navigateForward(['/codigoqr', { state: { user: this.inputValue2 } }]);
+  }
 
 }
