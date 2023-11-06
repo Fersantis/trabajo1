@@ -12,7 +12,11 @@ export class CodigoqrPage {
   
 
   constructor(private navCtrl: NavController) {}
-}
+
+  Generacion(){
+    this.navCtrl.navigateForward(['/codiguito']);
+  }
+} 
 
   
 

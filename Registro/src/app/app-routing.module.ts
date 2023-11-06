@@ -29,6 +29,10 @@ const routes: Routes = [
     loadChildren: () => import('./codigoqr/codigoqr.module').then((m) => m.CodigoqrPageModule)
   },
   {
+    path: 'codiguito',
+    loadChildren: () => import('./codiguito/codiguito.module').then((m) => m.CodiguitoPageModule)
+  },
+  {
     path: 'e404', // Agrega la ruta para la página de error 404 si no la has definido
   
     loadChildren: () => import('./e404/e404.module').then((m) => m.E404PageModule)
